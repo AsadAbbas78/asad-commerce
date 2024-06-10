@@ -9,6 +9,11 @@ export default {
           title: 'Product name'
       },
       {
+        name: 'producttype',
+        type: 'string',
+        title: 'Product Type'
+    },
+      {
           name: 'producttype',
           type: 'string',
           title: 'Product Type'
@@ -61,7 +66,7 @@ export default {
           of:[{type:'string'}]
       },
       {
-          name: 'quantity',
+          name: 'quantity',  
           type:'number',
           title:'Quantity'
       },
