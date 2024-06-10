@@ -1,5 +1,5 @@
 import { Button, buttonVariants } from "@/components/ui/button"
-import { LoginLink, RegisterLink, getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server"
+import { LoginLink, RegisterLink, } from "@kinde-oss/kinde-auth-nextjs/server"
 import Link from "next/link"
 import { ShoppingCart } from 'lucide-react';
 
@@ -31,9 +31,6 @@ const navArray: navArray[] = [
 ]
 
 const Navbar = () => {
-    const { getUser } = getKindeServerSession();
-    const user =  getUser();
-
     return (
         <header className="text-gray-600 body-font">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -48,20 +45,20 @@ const Navbar = () => {
                 <div className="space-x-4 flex items-center">
                   
                     <Link href={"/cart"}><ShoppingCart size={18} /></Link>
-                    {!user ? (<div className="space-x-3">
+
                         <LoginLink className={buttonVariants({
                             variant: "outline",
                             size: "sm",
                         })}>Sign in</LoginLink>
+
                         <RegisterLink
                             className={buttonVariants({
                                 variant: "secondary",
                                 size: "sm",
                             })}
                         >Sign up</RegisterLink>
-                    </div>) : (
-                        <DropdownMenuDemo UserData={user }/>
-                    )}
+                    
+                        <DropdownMenuDemo/>
                 </div>
             </div>
         </header>

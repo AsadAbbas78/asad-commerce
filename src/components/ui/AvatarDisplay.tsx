@@ -23,7 +23,7 @@ import {LogoutLink} from "@kinde-oss/kinde-auth-nextjs/components";
 import { KindeUser } from "@kinde-oss/kinde-auth-nextjs/types";
 import Link from "next/link"
 
-export function DropdownMenuDemo({UserData}:{UserData:KindeUser}) {
+export function DropdownMenuDemo() {
     
     return (
         <DropdownMenu>
@@ -36,14 +36,7 @@ export function DropdownMenuDemo({UserData}:{UserData:KindeUser}) {
             <DropdownMenuContent className="w-56">
                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
                 <DropdownMenuItem>
-                    <User className="mr-2 h-4 w-4" />
-                    <span>{UserData.given_name}{" "}{UserData.family_name}</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                    <Mail className="mr-2 h-4 w-4" />
-                    <span>{UserData.email}</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
+
                     <Github className="mr-2 h-4 w-4" />
                     <Link target="_blank" href={"https://github.com/AsadAbbas78"}>GitHub</Link>
                 </DropdownMenuItem>
