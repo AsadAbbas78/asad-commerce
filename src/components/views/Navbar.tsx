@@ -3,8 +3,6 @@ import { LoginLink, RegisterLink, } from "@kinde-oss/kinde-auth-nextjs/server"
 import Link from "next/link"
 import { ShoppingCart } from 'lucide-react';
 
-import { DropdownMenuDemo } from "../ui/AvatarDisplay";
-
 interface navArray {
     label: string,
     href: string
@@ -57,8 +55,6 @@ const Navbar = () => {
                                 size: "sm",
                             })}
                         >Sign up</RegisterLink>
-                    
-                        <DropdownMenuDemo/>
                 </div>
             </div>
         </header>
