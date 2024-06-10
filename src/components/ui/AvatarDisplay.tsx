@@ -44,7 +44,6 @@ export function DropdownMenuDemo() {
                     <LifeBuoy className="mr-2 h-4 w-4" />
                     <Link target="_blank" href={""}>Support</Link>
                 </DropdownMenuItem>
-                <DropdownMenuSeparator />
                 <DropdownMenuItem>
                     <LogOut className="mr-2 h-4 w-4" />
                     <LogoutLink>Log out</LogoutLink>
