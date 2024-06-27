@@ -24,7 +24,7 @@ const navArray: navArray[] = [
     },
     {
         label: "Kids",
-        href: "/kids"
+        href: "/Kids"
     },
     
 ]
