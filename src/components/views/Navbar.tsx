@@ -2,6 +2,7 @@ import { Button, buttonVariants } from "@/components/ui/button"
 import { LoginLink, RegisterLink, } from "@kinde-oss/kinde-auth-nextjs/server"
 import Link from "next/link"
 import { ShoppingCart } from 'lucide-react';
+import Products from "@/app/Products/page";
 
 interface navArray {
     label: string,
@@ -19,7 +20,7 @@ const navArray: navArray[] = [
     },
     {
         label: "Products",
-        href: "/products"
+        href: "/Products"
     },
     {
         label: "Kids",
